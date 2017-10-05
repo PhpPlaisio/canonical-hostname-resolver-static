@@ -10,8 +10,7 @@
   ],
   "require": {
     "php": ">=7.0.0",
-    "setbased/abc-canonical-hostname-resolver": "^0.9.1",
-    "setbased/exception": "^1.0.0"
+    "setbased/abc-canonical-hostname-resolver": "^1.0.0"
   },
   "require-dev": {
     "phing/phing": "^2.0.0",
