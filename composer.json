@@ -25,7 +25,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "SetBased\\Abc\\CanonicalHostnameResolver\\Test\\": "test"
+      "SetBased\\Abc\\CanonicalHostnameResolver\\Test\\": "test/"
     }
   },
   "config": {
