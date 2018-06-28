@@ -1,8 +1,7 @@
 <?php
-//----------------------------------------------------------------------------------------------------------------------
+
 namespace SetBased\Abc\CanonicalHostnameResolver;
 
-//----------------------------------------------------------------------------------------------------------------------
 /**
  * A CanonicalHostnameResolver with static hostname.
  */
@@ -25,7 +24,7 @@ class StaticCanonicalHostnameResolver implements CanonicalHostnameResolver
    * @api
    * @since 1.0.0
    */
-  public function __construct($hostname)
+  public function __construct(string $hostname)
   {
     // Remove port number, if any.
     $p = strpos($hostname, ':');
@@ -43,7 +42,7 @@ class StaticCanonicalHostnameResolver implements CanonicalHostnameResolver
    * @api
    * @since 1.0.0
    */
-  public function getCanonicalHostname()
+  public function getCanonicalHostname(): string
   {
     return $this->canonicalHostname;
   }
