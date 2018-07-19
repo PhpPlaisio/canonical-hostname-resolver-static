@@ -1,11 +1,11 @@
 <?php
-//----------------------------------------------------------------------------------------------------------------------
+declare(strict_types=1);
+
 namespace SetBased\Abc\CanonicalHostnameResolver\Test;
 
 use PHPUnit\Framework\TestCase;
 use SetBased\Abc\CanonicalHostnameResolver\StaticCanonicalHostnameResolver;
 
-//----------------------------------------------------------------------------------------------------------------------
 /**
  * Test cases for class StaticCanonicalHostnameResolver.
  */
