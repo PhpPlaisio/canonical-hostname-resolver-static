@@ -15,7 +15,7 @@ class StaticCanonicalHostnameResolverTest extends TestCase
   /**
    * Test method getCanonicalHostname without port number.
    */
-  public function testGetDomain1a()
+  public function testGetDomain1a(): void
   {
     $resolver = new StaticCanonicalHostnameResolver('www.example.com');
 
@@ -26,7 +26,7 @@ class StaticCanonicalHostnameResolverTest extends TestCase
   /**
    * Test method getCanonicalHostname without port number anf host name in upper case.
    */
-  public function testGetDomain1b()
+  public function testGetDomain1b(): void
   {
     $resolver = new StaticCanonicalHostnameResolver('www.EXAMPLE.COM');
 
@@ -37,7 +37,7 @@ class StaticCanonicalHostnameResolverTest extends TestCase
   /**
    * Test method getCanonicalHostname with trailing and leading whitespace.
    */
-  public function testGetDomain1c()
+  public function testGetDomain1c(): void
   {
     $resolver = new StaticCanonicalHostnameResolver(" www.example.com\t\n\r");
 
@@ -48,7 +48,7 @@ class StaticCanonicalHostnameResolverTest extends TestCase
   /**
    * Test method getCanonicalHostname with port number
    */
-  public function testGetDomain2()
+  public function testGetDomain2(): void
   {
     $resolver = new StaticCanonicalHostnameResolver('www.example.com:8080');
 
