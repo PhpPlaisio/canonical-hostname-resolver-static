@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace SetBased\Abc\CanonicalHostnameResolver;
+namespace Plaisio\CanonicalHostnameResolver;
 
 /**
  * A CanonicalHostnameResolver with static hostname.

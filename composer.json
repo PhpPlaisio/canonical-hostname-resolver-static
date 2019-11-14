@@ -1,31 +1,30 @@
 {
-  "name": "setbased/abc-canonical-hostname-resolver-static",
-  "description": "ABC-Framework: Canonical Hostname Resolver with static hostname",
+  "name": "plaisio/canonical-hostname-resolver-static",
+  "description": "PhpPlaisio: Canonical Hostname Resolver with static hostname",
   "keywords": [
-    "ABC-Framework",
+    "PhpPlaisio",
     "Canonical",
     "Hostname",
     "Resolver",
     "Static"
   ],
+  "license": "MIT",
   "require": {
     "php": ">=7.1.0",
-    "setbased/abc-canonical-hostname-resolver": "^2.0.0"
+    "plaisio/canonical-hostname-resolver": "^3.0.0"
   },
   "require-dev": {
     "phing/phing": "^2.0.0",
     "phpunit/phpunit": "^6.0.0"
   },
-  "type": "library",
-  "license": "MIT",
   "autoload": {
     "psr-4": {
-      "SetBased\\Abc\\CanonicalHostnameResolver\\": "src/"
+      "Plaisio\\CanonicalHostnameResolver\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "SetBased\\Abc\\CanonicalHostnameResolver\\Test\\": "test/"
+      "Plaisio\\CanonicalHostnameResolver\\Test\\": "test/"
     }
   },
   "config": {
