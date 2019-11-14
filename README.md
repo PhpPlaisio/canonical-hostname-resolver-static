@@ -32,6 +32,8 @@
 </tbody>
 </table>
 
+A CanonicalHostnameResolver with static hostname.
+
 #  License
 
 This project is licensed under the MIT license.
