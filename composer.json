@@ -11,7 +11,7 @@
   "license": "MIT",
   "require": {
     "php": ">=7.3",
-    "plaisio/canonical-hostname-resolver": "^1.0"
+    "plaisio/canonical-hostname-resolver": "^1.1"
   },
   "require-dev": {
     "phing/phing": "^2.0",
