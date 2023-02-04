@@ -12,9 +12,9 @@ class StaticCanonicalHostnameResolver implements CanonicalHostnameResolver
   /**
    * The canonical host name.
    *
-   * @var string|null
+   * @var string
    */
-  private $canonicalHostname;
+  private string $canonicalHostname;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -29,7 +29,10 @@ class StaticCanonicalHostnameResolver implements CanonicalHostnameResolver
   {
     // Remove port number, if any.
     $p = strpos($hostname, ':');
-    if ($p!==false) $hostname = substr($hostname, 0, $p);
+    if ($p!==false)
+    {
+      $hostname = substr($hostname, 0, $p);
+    }
 
     $this->canonicalHostname = strtolower(trim($hostname));
   }
