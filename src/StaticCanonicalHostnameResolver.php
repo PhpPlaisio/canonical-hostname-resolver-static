@@ -10,11 +10,11 @@ class StaticCanonicalHostnameResolver implements CanonicalHostnameResolver
 {
   //--------------------------------------------------------------------------------------------------------------------
   /**
-   * The canonical host name.
+   * The canonical hostname.
    *
    * @var string
    */
-  private string $canonicalHostname;
+  public string $canonicalHostname;
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
@@ -35,20 +35,6 @@ class StaticCanonicalHostnameResolver implements CanonicalHostnameResolver
     }
 
     $this->canonicalHostname = strtolower(trim($hostname));
-  }
-
-  //--------------------------------------------------------------------------------------------------------------------
-  /**
-   * Returns the canonical hostname (a.k.a. preferred fully qualified domain name).
-   *
-   * @return string
-   *
-   * @api
-   * @since 1.0.0
-   */
-  public function getCanonicalHostname(): string
-  {
-    return $this->canonicalHostname;
   }
 
   //--------------------------------------------------------------------------------------------------------------------

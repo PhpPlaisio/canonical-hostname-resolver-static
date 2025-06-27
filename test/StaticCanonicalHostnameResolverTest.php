@@ -19,18 +19,18 @@ class StaticCanonicalHostnameResolverTest extends TestCase
   {
     $resolver = new StaticCanonicalHostnameResolver('www.example.com');
 
-    $this->assertSame('www.example.com', $resolver->getCanonicalHostname());
+    $this->assertSame('www.example.com', $resolver->canonicalHostname);
   }
 
   //--------------------------------------------------------------------------------------------------------------------
   /**
-   * Test method getCanonicalHostname without port number anf host name in upper case.
+   * Test method getCanonicalHostname without port number and host name in upper case.
    */
   public function testGetDomain1b(): void
   {
     $resolver = new StaticCanonicalHostnameResolver('www.EXAMPLE.COM');
 
-    $this->assertSame('www.example.com', $resolver->getCanonicalHostname());
+    $this->assertSame('www.example.com', $resolver->canonicalHostname);
   }
 
   //--------------------------------------------------------------------------------------------------------------------
@@ -41,7 +41,7 @@ class StaticCanonicalHostnameResolverTest extends TestCase
   {
     $resolver = new StaticCanonicalHostnameResolver(" www.example.com\t\n\r");
 
-    $this->assertSame('www.example.com', $resolver->getCanonicalHostname());
+    $this->assertSame('www.example.com', $resolver->canonicalHostname);
   }
 
   //--------------------------------------------------------------------------------------------------------------------
@@ -52,7 +52,7 @@ class StaticCanonicalHostnameResolverTest extends TestCase
   {
     $resolver = new StaticCanonicalHostnameResolver('www.example.com:8080');
 
-    $this->assertSame('www.example.com', $resolver->getCanonicalHostname());
+    $this->assertSame('www.example.com', $resolver->canonicalHostname);
   }
 
   //--------------------------------------------------------------------------------------------------------------------

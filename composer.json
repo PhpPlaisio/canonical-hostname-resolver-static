@@ -11,11 +11,11 @@
   "license": "MIT",
   "require": {
     "php": ">=8.3",
-    "plaisio/canonical-hostname-resolver": "^1.4.0"
+    "plaisio/canonical-hostname-resolver": "^2.0.0"
   },
   "require-dev": {
     "phing/phing": "^3.0.1",
-    "phpunit/phpunit": "^11.5.22"
+    "phpunit/phpunit": "^11.5.25"
   },
   "autoload": {
     "psr-4": {
